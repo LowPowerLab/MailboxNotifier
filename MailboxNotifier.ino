@@ -163,7 +163,7 @@ void loop()
     Blink(LEDPIN, 5);
   #endif
       
-  now = now + 250 + 22 + (millis()-temp); //correct millis(). Add 22ms to compensate time lost in other peripheral code, may need to be tweaked to be accurate
+  now = now + 250 + 21 + (millis()-temp); //correct millis(). Add 21ms to compensate time lost in other peripheral code, may need to be tweaked to be accurate
   LowPower.powerDown(SENSORREADPERIOD, ADC_OFF, BOD_ON);
 }
 
