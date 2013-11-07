@@ -7,7 +7,8 @@
 #include <RFM12B.h>
 #include <avr\sleep.h>
 #include <avr\delay.h>
-#include <LowPower.h>
+#include <LowPower.h> //get library from: https://github.com/rocketscream/Low-Power
+                      //writeup here: http://www.rocketscream.com/blog/2011/07/04/lightweight-low-power-arduino-library/
 
 #define NETWORKID         100  //what network this node is on
 #define NODEID              2  //this node's ID, should be unique among nodes on this NETWORKID
