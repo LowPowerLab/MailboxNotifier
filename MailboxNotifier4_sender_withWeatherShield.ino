@@ -88,8 +88,8 @@ byte sendLoops=0;
 unsigned long MLO=0; //MailLastOpen (ago, in ms)
 unsigned long now = 0, time=0, lastSend = 0, temp = 0;
 float batteryVolts = 5;
-char* BATstr="BAT:5.00v";
-char* Pstr = "123.45";
+char BATstr[12];
+char Pstr[12];
 
 void setup() {
 #ifdef SERIAL_EN

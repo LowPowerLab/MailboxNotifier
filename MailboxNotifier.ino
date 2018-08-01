@@ -124,9 +124,9 @@ void loop()
     long lastClosed = (now - MLC) / 1000; //get seconds
     long LO = lastOpened;
     long LC = lastClosed;
-    char* MLOstr="MLO:99d23h59m";
-    char* MLCstr="MLC:99d23h59m";
-    
+    char MLOstr[20];
+    char MLCstr[20];
+
     if (lastOpened <= 59) periodO = 's'; //1-59 seconds
     else if (lastOpened <= 3599) { periodO = 'm'; lastOpened/=60; } //1-59 minutes
     else if (lastOpened <= 259199) { periodO = 'h'; lastOpened/=3600; } // 1-71 hours
